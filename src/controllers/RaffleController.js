@@ -1,6 +1,6 @@
-import User from '../models/User';
-import RaffleService from '../services/RaffleService';
-import EmailService from '../services/EmailService';
+const User = require('../models/User');
+const RaffleService = require('../services/RaffleService');
+const EmailService = require('../services/EmailService');
 
 class RaffleController {
   async raffle(_req, res) {
@@ -22,4 +22,4 @@ class RaffleController {
   }
 }
 
-export default new RaffleController();
+module.exports = new RaffleController();

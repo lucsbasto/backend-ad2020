@@ -1,6 +1,6 @@
-import * as Yup from 'yup';
-import User from '../models/User';
-import UserService from '../services/UserService';
+const Yup = require('yup');
+const User = require('../models/User');
+const UserService = require('../services/UserService');
 
 class UserController {
   async index(req, res) {
@@ -96,4 +96,4 @@ class UserController {
   }
 }
 
-export default new UserController();
+module.exports = new UserController();

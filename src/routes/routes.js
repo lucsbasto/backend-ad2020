@@ -1,6 +1,6 @@
-import { Router } from 'express';
-import UserController from '../controllers/UserController';
-import RaffleController from '../controllers/RaffleController';
+const { Router } = require('express');
+const UserController = require('../controllers/UserController');
+const RaffleController = require('../controllers/RaffleController');
 const routes = new Router();
 
 routes.get('/users', UserController.index);
@@ -11,4 +11,4 @@ routes.delete('/users/:id', UserController.destroy);
 
 routes.get('/raffle', RaffleController.raffle);
 
-export default routes;
+module.exports = routes;

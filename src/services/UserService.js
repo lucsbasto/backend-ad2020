@@ -1,4 +1,4 @@
-import User from '../models/User';
+const User = require('../models/User');
 
 class UserService {
   async store(name, email) {
@@ -36,4 +36,4 @@ class UserService {
   }
 }
 
-export default new UserService();
+module.exports = new UserService();

@@ -1,8 +1,8 @@
-import express from 'express';
-import cors from 'cors';
-import routes from './routes/routes';
-import { connect } from 'mongoose';
-import { DATABASE_URL } from './config/environments/environment';
+const express = require('express');
+const cors = require('cors');
+const routes = require('./routes/routes');
+const { connect } = require('mongoose');
+const { DATABASE_URL } = require('./config/environments/environment');
 
 class App {
   constructor() {
@@ -37,4 +37,4 @@ class App {
   }
 }
 
-export default new App().server;
+module.exports = new App().server;

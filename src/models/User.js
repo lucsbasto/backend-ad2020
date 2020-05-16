@@ -1,5 +1,5 @@
-import { Schema, model, Types } from 'mongoose';
-import validator from 'validator';
+const { Schema, model, Types } = require('mongoose');
+const validator = require('validator');
 const UserSchema = new Schema(
   {
     name: {
@@ -33,4 +33,4 @@ UserSchema.statics.isValid = id => {
 };
 
 const User = model('User', UserSchema);
-export default User;
+module.exports = User;

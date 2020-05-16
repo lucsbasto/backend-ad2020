@@ -43,4 +43,4 @@ class RaffleService {
   }
 }
 
-export default new RaffleService();
+module.exports = new RaffleService();

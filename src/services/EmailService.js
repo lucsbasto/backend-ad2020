@@ -1,5 +1,5 @@
-import { transporter } from '../config/mail/config';
-import { MAIL_USER } from '../config/environments/environment';
+const { transporter } = require('../config/mail/config');
+const { MAIL_USER } = require('../config/environments/environment');
 
 class EmailService {
   async send(name, email, friend) {
@@ -21,4 +21,4 @@ class EmailService {
   }
 }
 
-export default new EmailService();
+module.exports = new EmailService();
