@@ -10,7 +10,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.14",
     "nodemailer": "^6.4.6",
-    "validator": "^13.0.0",
+    "validator": "^13.7.0",
     "yup": "^0.28.5"
   },
   "scripts": {
